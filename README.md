@@ -1,2 +1,2 @@
-# layout
+## Layout
 The repository contains layout projects.
