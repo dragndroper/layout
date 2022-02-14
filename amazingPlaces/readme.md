@@ -166,9 +166,28 @@ justify-self: center;
 }
 ```
 
+ИЛИ
+
+```
+.benefits__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 55px;
+}
+```
+
+ИЛИ (карточки занимают по 1 колонке)
+
+```
+.benefits__card {
+    grid-column: span 1;
+}
+```
+
 # Единицы измерения 
 
-height: 100vh; - весь видимый экран
+1fr - это одна часть от всего оставшегося пространства, т.е. заданная ширина
+auto - ширина будет зависеть от ширины контейнера и от ширины контента каждого item, т.е. незаданное значение ширины
 
 http://css.yoksel.ru/size-units/
 
@@ -195,3 +214,31 @@ color: #FFFFFF;
 }
 ```
 
+# Position
+
+Absolute и Fixed выпадают из общего потока документов.
+
+# Box-Sizing
+
+Не даем унаследованным элементам увеличивать свои размеры из-за дополнительных padding
+
+```
+html {
+box-sizing: border-box;
+}
+
+*, *::before, *::after {
+box-sizing: inherit;
+}
+```
+
+# Img
+
+Не даем картинкам менять свои размеры при сужении и расширении
+
+```
+img {
+max-width: 100%;
+height: auto;
+}
+```
