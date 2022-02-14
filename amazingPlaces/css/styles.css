@@ -419,6 +419,31 @@ img {
     max-width: 1060px;
     margin: 0 auto;
 }
+
+.wrapper-large {
+    max-width: 1262px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    display: block;
+    content: '';
+    width: 253px;
+    height: 3px;
+    background: #006DFE;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 /*   CUSTOM OPTIONS END    */
 
 
@@ -556,8 +581,6 @@ img {
     margin: 0 auto;
     box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
     position: relative;
-
-
 }
 
 .benefits__title {
@@ -622,5 +645,94 @@ benefits__card-thumb {
     background: url("../img/svg/arrow-ico.svg") no-repeat right center;
     transition: .2s all;
 }
-
 /*   BENEFITS END   */
+
+
+
+
+/*   PLACES START   */
+.places__caption {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+
+.places__title {
+    margin-right: 15px;
+}
+
+.places__view-all {
+    font-size: 16px;
+    line-height: 24px;
+    color: #006DFE;
+    text-decoration: none;
+    background: url("../img/svg/arrow-ico.svg") no-repeat 100% center;
+    display: inline-block;
+    padding-right: 59px;
+}
+
+.places__view-all:hover, .places__view-all:focus {
+    background: url("../img/svg/arrow-ico.svg") no-repeat 100% center;
+    opacity: 75%;
+    transition: .2s all;
+}
+/*   PLACES END   */
+
+
+/*   IMAGES START   */
+.places__cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+.places__card {
+    position: relative;
+    overflow: hidden;
+}
+
+.places__card:hover .places__card-pic {
+    transform: scale(1.05);
+}
+
+.places__card::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(21, 24, 36, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.places__card-title {
+    z-index: 3;
+    position: absolute;
+    bottom: 27px;
+    left: 29px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+
+}
+
+.places__card_size_lg {
+    grid-column: span 3;
+}
+
+.places__card-pic {
+    height: 354px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: .2s all;
+}
+
+
+
+/*   IMAGES END   */
