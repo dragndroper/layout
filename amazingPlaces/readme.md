@@ -189,8 +189,9 @@ http://css.yoksel.ru/size-units/
 
 Настроить цвет текста у placeholder в input можно через псевдоселектор:
 
+```
 .search-form__field::placeholder {
 color: #FFFFFF;
 }
-
+```
 
