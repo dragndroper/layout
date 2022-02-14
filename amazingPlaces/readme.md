@@ -86,9 +86,9 @@ min-monochrome: 8).
 Задаёт количество физических пикселей устройства на каждый CSS-пиксель.
 
 
-### Способы выравнивания дочернего блока внутри родителя
+# Способы выравнивания дочернего блока внутри родителя
 
-#margin: 0 auto - актуальное
+### margin: 0 auto - актуальное
 
  <div class="wrap">
     <div class="block m-auto"></div>
@@ -98,7 +98,7 @@ min-monochrome: 8).
 margin: 0 auto;
 }
 
-#text-align - редкое
+### text-align - редкое
 
  <div class="wrap center">
     ...
@@ -113,7 +113,7 @@ text-align: center;
 display: inline-block;
 }
 
-#position - устаревшее
+### position - устаревшее
 
 <div class="wrap relative">
     <div class="block absolute"></div>
@@ -129,7 +129,7 @@ left: 50%;
 transform: translate (-50%, 0); /* альтернатива margin-left: -50px;  */
 }
 
-# flex - популярное
+### flex - популярное
 
 <div class="wrap flexbox">
     <div class="block"></div>
@@ -140,7 +140,7 @@ display: flex;
 justify-content: center;
 }
 
-# grid - современное
+### grid - современное
 
 <div class="wrap grid-parent">
     <div class="block grid-child"></div>
