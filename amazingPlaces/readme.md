@@ -90,6 +90,7 @@ min-monochrome: 8).
 
 ### margin: 0 auto - актуальное
 
+```
  <div class="wrap">
     <div class="block m-auto"></div>
 </div>
@@ -97,9 +98,11 @@ min-monochrome: 8).
 .m-auto {
 margin: 0 auto;
 }
+```
 
 ### text-align - редкое
 
+```
  <div class="wrap center">
     ...
 </div>
@@ -112,9 +115,11 @@ text-align: center;
 ...
 display: inline-block;
 }
+```
 
 ### position - устаревшее
 
+```
 <div class="wrap relative">
     <div class="block absolute"></div>
 </div>
@@ -128,9 +133,11 @@ position: absolute;
 left: 50%;
 transform: translate (-50%, 0); /* альтернатива margin-left: -50px;  */
 }
+```
 
 ### flex - популярное
 
+```
 <div class="wrap flexbox">
     <div class="block"></div>
 </div>
@@ -139,9 +146,11 @@ transform: translate (-50%, 0); /* альтернатива margin-left: -50px; 
 display: flex;
 justify-content: center;
 }
+```
 
 ### grid - современное
 
+```
 <div class="wrap grid-parent">
     <div class="block grid-child"></div>
 </div>
@@ -155,3 +164,4 @@ grid-template-areas: "a";
 grid-area: a;
 justify-self: center;
 }
+```
