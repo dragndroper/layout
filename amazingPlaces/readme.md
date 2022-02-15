@@ -302,3 +302,22 @@ height: auto;
 
 Тег <section> ставится, когда есть title. Иные случаи семантически неправильны.
 Нет title, - поставь <div>.
+
+# Видео
+
+Хак по подгонке по размеру блока для видео:
+
+```
+.videos {
+    width: 100%;
+}
+
+.videos__wrapper {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.video__item {
+    padding-top: 100%;
+}
+```

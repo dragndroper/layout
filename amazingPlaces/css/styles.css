@@ -455,6 +455,18 @@ img {
     width: 100%;
 }
 
+.header_active {
+    background: #0E1D28;
+    z-index: 5;
+    padding-bottom: 30px;
+    transition: .5s all;
+}
+
+.header_active:hover {
+    opacity: 90%;
+    transition: .2s all;
+}
+
 .header__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -494,7 +506,6 @@ img {
 }
 
 /*   HEADER END  */
-
 
 
 /*   INTRO START   */
@@ -562,12 +573,8 @@ img {
     opacity: 85%;
     transition: .2s all;
 }
+
 /*   INTRO END   */
-
-
-
-
-
 
 
 /*   BENEFITS START   */
@@ -646,9 +653,8 @@ benefits__card-thumb {
     background: url("../img/svg/arrow-ico.svg") no-repeat right center;
     transition: .2s all;
 }
+
 /*   BENEFITS END   */
-
-
 
 
 /*   PLACES START   */
@@ -679,6 +685,7 @@ benefits__card-thumb {
     opacity: 75%;
     transition: .2s all;
 }
+
 /*   PLACES END   */
 
 
@@ -758,12 +765,8 @@ benefits__card-thumb {
     height: 100%;
     z-index: 4;
 }
+
 /*   IMAGES END   */
-
-
-
-
-
 
 
 /*   TOURS START   */
@@ -782,7 +785,7 @@ benefits__card-thumb {
 
 .tour-pic {
     overflow: hidden;
-    box-shadow: 8px -4px 9px 1px rgba(0,0,0,0.52);
+    box-shadow: 8px -4px 9px 1px rgba(0, 0, 0, 0.52);
 }
 
 .tour-thumb:hover {
@@ -824,11 +827,8 @@ benefits__card-thumb {
     transition: .2s all;
     outline: none;
 }
+
 /*   TOURS END   */
-
-
-
-
 
 
 /*   TOP START   */
@@ -931,8 +931,79 @@ benefits__card-thumb {
     transition: .2s all;
 }
 
-
-
-
-
 /*   TOP END   */
+
+
+/*   VIDEOS START   */
+
+.videos {
+    width: 100%;
+}
+
+.videos__wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.video__item {
+    padding-top: 56.25%;
+}
+
+.video__element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*   VIDEOS END   */
+
+/*   FOOTER START   */
+.footer {
+    background: #0E1D28;
+    padding: 120px 0;
+}
+
+.footer__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__logo {
+    width: 50%;
+}
+
+.footer__nav {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+    width: 50%;
+}
+
+.footer__menu_title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+
+}
+
+.footer__menu-link {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.footer__menu-link:hover, .footer__menu-link:focus {
+    outline: none;
+    opacity: 80%;
+}
+
+
+
+/*   FOOTER END   */
