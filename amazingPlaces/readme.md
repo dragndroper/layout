@@ -1,3 +1,6 @@
+методология БЭМ ПОСМОТРИ
+
+
 ### Шрифты
 
 Получить список шрифтов с макета - Font Fascia Получить ссылку на нужные шрифты - Google Fonts Helper Подключить шрифты
@@ -153,14 +156,14 @@ transform: translate (-50%, 0); /* альтернатива margin-left: -50px; 
 ### flex - популярное
 
 ```
-<div class="wrap flexbox">
-    <div class="block"></div>
-</div>
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    flex-basis: 118px;
+    flex-direction: column;
 
-.flexbox {     
-display: flex;
-justify-content: center;
-}
+    Также Flex хорошо работает с margin, если элементы слиплись.
 ```
 
 ### grid - современное
@@ -294,3 +297,8 @@ height: auto;
     z-index: 4;
 }
 ```
+
+# Секции
+
+Тег <section> ставится, когда есть title. Иные случаи семантически неправильны.
+Нет title, - поставь <div>.
