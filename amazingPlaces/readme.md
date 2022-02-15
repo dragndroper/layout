@@ -279,3 +279,18 @@ height: auto;
  transition: .2s all;
 }
 ```
+
+# Ссылка
+
+Если надо растянуть ссылку по всему блоку, то можно позиционировать и поставить приоритет:
+
+```
+.places__card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+```
