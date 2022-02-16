@@ -137,6 +137,11 @@ display: inline-block;
 
 ### position - устаревшее
 
+absolute выравнивается относительно родителя с relative.
+fixed выравнивается сам относительно экрана.
+sticky приклеивается
+
+
 ```
 <div class="wrap relative">
     <div class="block absolute"></div>
