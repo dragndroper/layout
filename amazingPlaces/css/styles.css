@@ -640,7 +640,7 @@ img {
     width: 100%;
     font-weight: 500;
     font-size: 35px;
-    line-height: 32px;
+    line-height: 0px;
     padding: 93px 100px 88px 100px;
     position: absolute;
     top: 0;
