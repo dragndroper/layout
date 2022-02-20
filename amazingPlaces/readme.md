@@ -451,3 +451,76 @@ menu.classList.remove('header__nav_active')
 Лучше создавать под них одноименные файлы с префиксом min.
 
 Валидатор ошибок - https://validator.w3.org/unicorn/?ucn_lang=ru
+
+# Иконки
+Иконки для всех устройств - https://realfavicongenerator.net/
+Если проблемы с доступом, то в настройках Debugger исправляется.
+
+# SEO 
+
+OpenGraph - формат, который позволяет корректно отобрать ссылку в соцсетях с превью.
+https://ruogp.me/
+
+Рекомендуется - всего 1 заголовок h1 на странице. Причем h1 в section относится не к странице, а к секции, поэтому поисковые роботы будут воспринимать его именно так. Лучше div.
+
+# Администрирование
+
+Это удобная система управления заголовками, текстами, другим контентом.
+Готовые решения - это битрекс, вордпресс и т.д.
+
+Настраиваемое - https://textolite.ru/ 
+
+# css - переменная 
+
+Классика
+```
+:root {
+--primary-color: #fffff;
+}
+
+.title {
+color: var(--primary-color);
+}
+```
+
+Фулбэк - если нет основного стиля, то отработает фулбэк.
+
+```
+:root {
+}
+
+.title {
+color: var(--primary-color, green);
+}
+```
+
+Получить доступ из JS
+
+```
+const root = document.querySelector(':root');
+const rootStyles = getComputedStyle(root);
+
+const primaryColor = rootStyles.getPropertyValue('--primary-color')
+console.log(primaryColor)
+
+root.style.setProperty('--primary-color', 'black')
+```
+
+# Анимация 
+
+```
+.element {
+animation-name: moveToTop;
+animation-duration: .2s;
+animation-iteration-count: 1;
+}
+
+@keyframes moveToTop {
+from {
+transform: translateY(50%);
+}
+to {
+transform: translateY(0);
+}
+}
+```

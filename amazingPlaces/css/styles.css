@@ -506,11 +506,8 @@ img {
     opacity: 75%;
     outline: none;
 }
+
 /*   HEADER END  */
-
-
-
-
 
 
 /*   HEADER BURGER START  */
@@ -544,13 +541,8 @@ img {
 .burger__line_third {
     bottom: 0;
 }
+
 /*   HEADER BURGER END  */
-
-
-
-
-
-
 
 
 /*   INTRO START   */
@@ -1004,12 +996,8 @@ benefits__card-thumb {
     width: 100%;
     height: 100%;
 }
+
 /*   VIDEOS END   */
-
-
-
-
-
 
 
 /*   FOOTER START   */
@@ -1036,7 +1024,7 @@ benefits__card-thumb {
     width: 50%;
     display: flex;
     flex-wrap: wrap;
-   justify-content: space-between;
+    justify-content: space-between;
 }
 
 .footer__menu_title {
@@ -1060,12 +1048,8 @@ benefits__card-thumb {
     outline: none;
     opacity: 80%;
 }
+
 /*   FOOTER END   */
-
-
-
-
-
 
 
 /*   MEDIA START  */
@@ -1096,51 +1080,50 @@ benefits__card-thumb {
         padding: 75px 15px;
     }
 
-  .places__card_size_lg {
-      grid-column: span 6;
-  }
+    .places__card_size_lg {
+        grid-column: span 6;
+    }
 
-  .places__card_size_sm {
-      grid-column: span 6;
-  }
+    .places__card_size_sm {
+        grid-column: span 6;
+    }
 
-  .tours__tour {
-      grid-column-gap: 40px;
-  }
+    .tours__tour {
+        grid-column-gap: 40px;
+    }
 
-  .tour__info {
-      padding-left: 0px;
-  }
+    .tour__info {
+        padding-left: 0px;
+    }
 
-  .tour__title {
-      margin-bottom: 15px;
-  }
+    .tour__title {
+        margin-bottom: 15px;
+    }
 
-  .tour__desc {
-      margin-bottom: 10px;
-  }
+    .tour__desc {
+        margin-bottom: 10px;
+    }
 
     .top__cards {
         grid-column-gap: 25px;
         grid-row-gap: 55px;
     }
 
-  .top__card {
-      grid-column: span 3;
-  }
+    .top__card {
+        grid-column: span 3;
+    }
 
-  .top__card-pic {
-      margin-bottom: 25px;
-  }
+    .top__card-pic {
+        margin-bottom: 25px;
+    }
 
-  .footer {
-      padding: 60px 10px;
-  }
+    .footer {
+        padding: 60px 10px;
+    }
 
-  .footer_menu {
-      padding-right: 15px;
-  }
-
+    .footer_menu {
+        padding-right: 15px;
+    }
 }
 
 
@@ -1213,8 +1196,7 @@ benefits__card-thumb {
         opacity: 100%;
     }
 
-/*  под мобилку  */
-
+    /*  под мобилку  */
     .header__wrapper {
         padding-top: 30px;
     }
@@ -1265,7 +1247,6 @@ benefits__card-thumb {
     .benefits__card-desc {
         margin-bottom: 20px;
     }
-
 
 
     .section-title {
@@ -1325,31 +1306,80 @@ benefits__card-thumb {
         padding: 30px 0px;
     }
 
+
     .footer__item {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-
         padding: 0 0 15px 0;
     }
 
     .footer__logo {
-        padding-bottom: 10px;
         grid-column: span 2;
         align-self: center;
         justify-self: center;
     }
 
+    .footer__logo-pic {
+        padding-bottom: 20px;
+        display: block;
+        margin: 0 auto;
+    }
+
     .footer_menu {
         padding: 0 0 10px 25px;
+    }
+
+    .footer__nav {
+        justify-self: center;
+    }
+
+    .footer__menu_title {
+        font-size: 18px;
+    }
+
+    .footer__menu-item {
+        display: block;
+    }
+
+    .footer__menu-item_active {
+        display: block;
+    }
+
+    .footer__menu-link {
+        font-size: 12px;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .header__nav {
+        padding: 75px 30px;
+    }
+}
+
+/* 664 */
+
+@media screen and (max-width: 664px) {
+
+    .footer {
+        padding: 30px 0px;
 
     }
 
     .footer__logo-pic {
         padding-bottom: 20px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .footer_menu {
+        padding: 0 0 10px 10px;
     }
 
     .footer__nav {
-        justify-self: center;
+        display: grid;
+        justify-content: center;
     }
 
     .footer__menu_title {
@@ -1368,49 +1398,12 @@ benefits__card-thumb {
         font-size: 12px;
     }
 
-
-
-
-
-
-
-
-
-
-
 }
-
-@media screen and (max-width: 500px) {
-    .header__nav {
-        padding: 75px 30px;
-    }
-}
-
-@media screen and (max-width: 425px) {
-
-    .top__card-stats {
-        max-width: 377px;
-    }
-
-
-    .footer__nav {
-        width: 100%;
-    }
-
-    .footer__menu-item {
-        display: block;
-    }
-}
-
 
 
 @media screen and (max-width: 320px) {
     .footer {
         padding: 30px 0px;
-    }
-
-    .footer__item {
-
     }
 
     .footer__logo {
@@ -1451,6 +1444,4 @@ benefits__card-thumb {
     }
 
 }
-
-
 /*   MEDIA END  */

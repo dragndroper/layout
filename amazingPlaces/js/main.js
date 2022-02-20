@@ -53,16 +53,6 @@
     }
 }()
 
-// !function() {
-//     for (const link of document.querySelectorAll('.header__link')) {
-//         console.log(link)
-//         const navItem = document.querySelector('.header__nav')
-//         link.addEventListener('click', () => {
-//             navItem.classList.remove('header__nav header__nav_active')
-//         })
-//     }
-// }()
-
 // Scroll to anchors
 !function () {
 
@@ -103,7 +93,6 @@
     };
     scrollTo();
 }();
-
 
 
 
