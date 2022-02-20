@@ -1,6 +1,6 @@
 // IIFE
 
-!function(){
+!function () {
     const header = document.querySelector('.header');
     window.onscroll = () => {
         if (window.pageYOffset > 50) {
@@ -12,7 +12,7 @@
 }()
 
 
-!function() {
+!function () {
     const searchForm = document.querySelector('.search-form')
     searchForm.addEventListener('submit', (e) => {
         e.preventDefault()
@@ -20,10 +20,11 @@
 }()
 
 
-!function() {
+!function () {
     const burgerItem = document.querySelector('.burger')
     const menu = document.querySelector('.header__nav')
     const menuCloseItem = document.querySelector('.header__nav-close')
+    const menuLinks = document.querySelectorAll('.header__link')
 
     burgerItem.addEventListener('click', () => {
         menu.classList.add('header__nav_active')
@@ -32,7 +33,76 @@
     menuCloseItem.addEventListener('click', () => {
         menu.classList.remove('header__nav_active')
     })
+
+    if (window.innerWidth <= 767) {
+        for (let i = 0; i < menuLinks.length; i++) {
+            menuLinks[i].addEventListener('click', () => {
+                menu.classList.remove('header__nav_active')
+            })
+        }
+    }
 }()
+
+!function () {
+    for (const title of document.querySelectorAll('.footer__menu_title')) {
+        for (const li of document.querySelectorAll('.footer__menu-item')) {
+            title.addEventListener('click', () => {
+                li.classList.toggle('footer__menu-item_active')
+            })
+        }
+    }
+}()
+
+// !function() {
+//     for (const link of document.querySelectorAll('.header__link')) {
+//         console.log(link)
+//         const navItem = document.querySelector('.header__nav')
+//         link.addEventListener('click', () => {
+//             navItem.classList.remove('header__nav header__nav_active')
+//         })
+//     }
+// }()
+
+// Scroll to anchors
+!function () {
+
+    const smoothScroll = function (targetEl, duration) {
+        const headerElHeight = document.querySelector('.header').clientHeight;
+        let target = document.querySelector(targetEl);
+        let targetPosition = target.getBoundingClientRect().top - headerElHeight;
+        let startPosition = window.pageYOffset;
+        let startTime = null;
+
+        // плавность
+        const ease = function (t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t + b;
+            t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+        };
+
+        const animation = function (currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const run = ease(timeElapsed, startPosition, targetPosition, duration);
+            window.scrollTo(0, run);
+            if (timeElapsed < duration) requestAnimationFrame(animation);
+        };
+        requestAnimationFrame(animation);
+
+    };
+
+    const scrollTo = function () {
+        const links = document.querySelectorAll('.js-scroll');
+        links.forEach(each => {
+            each.addEventListener('click', function () {
+                const currentTarget = this.getAttribute('href');
+                smoothScroll(currentTarget, 1000);
+            });
+        });
+    };
+    scrollTo();
+}();
 
 
 

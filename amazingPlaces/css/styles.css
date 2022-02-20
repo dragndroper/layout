@@ -645,7 +645,7 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(-100%);
+    transform: translateY(-99%);
     background: #FFFFFF;
 }
 
@@ -1143,10 +1143,6 @@ benefits__card-thumb {
 
 }
 
-@media screen and (320px) {
-
-}
-
 
 @media screen and (max-width: 767px) {
 
@@ -1368,6 +1364,10 @@ benefits__card-thumb {
         display: block;
     }
 
+    .footer__menu-link {
+        font-size: 12px;
+    }
+
 
 
 
@@ -1384,6 +1384,72 @@ benefits__card-thumb {
     .header__nav {
         padding: 75px 30px;
     }
+}
+
+@media screen and (max-width: 425px) {
+
+    .top__card-stats {
+        max-width: 377px;
+    }
+
+
+    .footer__nav {
+        width: 100%;
+    }
+
+    .footer__menu-item {
+        display: block;
+    }
+}
+
+
+
+@media screen and (max-width: 320px) {
+    .footer {
+        padding: 30px 0px;
+    }
+
+    .footer__item {
+
+    }
+
+    .footer__logo {
+        padding-bottom: 10px;
+        grid-column: span 2;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .footer__logo-pic {
+        padding-bottom: 20px;
+    }
+
+    .footer_menu {
+        padding: 0 0 10px 10px;
+    }
+
+
+    .footer__nav {
+        display: grid;
+        justify-content: center;
+    }
+
+    .footer__menu_title {
+        font-size: 18px;
+    }
+
+    .footer__menu-item {
+        display: none;
+    }
+
+    .footer__menu-item_active {
+        display: block;
+    }
+
+    .footer__menu-link {
+        font-size: 12px;
+    }
+
 }
 
 

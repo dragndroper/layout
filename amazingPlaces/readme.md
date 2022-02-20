@@ -332,3 +332,122 @@ height: auto;
     padding-top: 100%;
 }
 ```
+
+# Правильный перебор ul li
+
+### Пример
+
+```
+<ul>
+  <li class="n">Текст</li>
+  <li class="lc">текст</li>
+  <li class="ac active">текст trigger</li>
+  <li class="s">текст</li>
+</ul>
+```
+
+### [... ].forEach()
+
+```
+[...document.querySelectorAll('li')].forEach(node => {
+  if (node.classList.contains('ac') && node.classList.contains('active')) {
+    console.log(node);
+    console.log('do something...');
+  }
+});
+```
+
+### for...of
+
+```
+for (const li of document.querySelectorAll('ul li')) {
+if (li.matches('.ac.active')) {
+console.log(li.outerHTML);
+}
+}
+```
+
+### forEach
+
+```
+li.forEach(function(item) {
+  if (item.classList.contains('active') && item.classList.contains('ac')) {
+    // действие
+  }
+});
+```
+
+### for (let i = 0; i < length; i++)
+
+```
+if (window.innerWidth <= 767) {
+for (let i = 0; i < menuLinks.length; i++) {
+menuLinks[i].addEventListener('click', () => {
+menu.classList.remove('header__nav_active')
+})
+}
+}
+```
+
+
+#  Scroll
+ 
+Нужно указать header и в html добавить в класс js-scroll.
+Если header не fixed, то нужно удалить из скрипта headerElHeight.
+
+```
+    // Scroll to anchors
+    (function () {
+
+        const smoothScroll = function (targetEl, duration) {
+            const headerElHeight =  document.querySelector('.header').clientHeight;
+            let target = document.querySelector(targetEl);
+            let targetPosition = target.getBoundingClientRect().top - headerElHeight;
+            let startPosition = window.pageYOffset;
+            let startTime = null;
+
+            // плавность
+            const ease = function(t,b,c,d) {
+                t /= d / 2;
+                if (t < 1) return c / 2 * t * t + b;
+                t--;
+                return -c / 2 * (t * (t - 2) - 1) + b;
+            };
+
+            const animation = function(currentTime){
+                if (startTime === null) startTime = currentTime;
+                const timeElapsed = currentTime - startTime;
+                const run = ease(timeElapsed, startPosition, targetPosition, duration);
+                window.scrollTo(0,run);
+                if (timeElapsed < duration) requestAnimationFrame(animation);
+            };
+            requestAnimationFrame(animation);
+
+        };
+
+        const scrollTo = function () {
+            const links = document.querySelectorAll('.js-scroll');
+            links.forEach(each => {
+                each.addEventListener('click', function () {
+                    const currentTarget = this.getAttribute('href');
+                    smoothScroll(currentTarget, 1000);
+                });
+            });
+        };
+        scrollTo();
+    }());
+```
+
+# Оптимизация для Google
+
+Проверить оптимизацию - https://pagespeed.web.dev/
+Сжать изображение - https://imagecompressor.com/ru/
+Расстановка - скрипты перед </body>, css перед </head>. Дело в блокировке, хорошо отслеживается через события страницы: DOMContentLoaded и т.д.
+Префиксы - https://autoprefixer.github.io/ru/. Кросс-браузерность.  
+
+Минификатор CSS - https://www.toptal.com/developers/cssminifier/.
+Минификатор JS - https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.6&spec=false&loose=false&code_lz=Q&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=env%2Creact%2Cstage-2&prettier=false&targets=&version=7.17.5&externalPlugins=&assumptions=%7B%7D
+Минификатор HTML - https://products.aspose.app/html/ru/minifier/html
+Лучше создавать под них одноименные файлы с префиксом min.
+
+Валидатор ошибок - https://validator.w3.org/unicorn/?ucn_lang=ru
