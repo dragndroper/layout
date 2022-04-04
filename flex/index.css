@@ -8,40 +8,34 @@ body {
 
 .flex-init {
     background: lightgray;
-    /*  для наглядности в align-items: flex-end  */
     height: 80px;
 }
 
 .box {
     background: steelblue;
-    color: #fff;
-
+    height: 50px;
+    width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
 }
 
 .flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: stretch;
-
+    align-items: flex-start;
 }
 
 .box-init1 {
-    width: 50px;
-    height: 50px;
+    flex: 1 1 250px;
 }
+
 .box-init2 {
-    width: 50px;
-    height: auto;
+    flex: 1 1 250px;
 }
+
 .box-init3 {
-    width: 50px;
-    height: 50px;
-    align-self: flex-end;
+    flex: 1 1 250px;
 }
-
-
-
