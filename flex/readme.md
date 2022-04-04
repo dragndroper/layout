@@ -1,3 +1,4 @@
-# Гриды с дефолтными настройками  
+# Флекс со всеми основными настройками 
 
-![Alr-Grid](https://i.ibb.co/M8Y2X0t/grid.jpg "Grid")
+![Alr-Flex](https://i.ibb.co/T0wsNNm/flex.jpg "Flex")
+
