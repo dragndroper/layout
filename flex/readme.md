@@ -5,7 +5,7 @@
 В примере будет вот это:  
 
 
-![Alr-Flex1](https://i.ibb.co/JRMp7fV/flex.jpg "Flex1")
+![Alr-Flex1](https://i.ibb.co/DGVwSqk/flex.jpg "Flex1")
 
 
 
