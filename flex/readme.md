@@ -1,6 +1,11 @@
 # Флекс со всеми основными настройками 
 
-![Alr-Flex](https://i.ibb.co/T0wsNNm/flex.jpg "Flex")
+![Alr-Flex](https://i.ibb.co/T0wsNNm/flex.jpg "Flex")  
+  
+
+![Alr-Flex1](https://i.ibb.co/JRMp7fV/flex.jpg "Flex1")
+
+
 
 #### Общие свойства:
 
