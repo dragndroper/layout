@@ -1,4 +1,6 @@
-методология БЭМ ПОСМОТРИ
+# Верстка макета Amazing Places
+
+![Alt-amazing](https://github.com/dragndroper/markup/blob/main/amazingPlaces/img/amazing.jpg?raw=true)
 
 
 ### Шрифты
