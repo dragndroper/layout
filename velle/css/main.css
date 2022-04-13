@@ -1,0 +1,833 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+    /*   Подумай, может сделать height: 100vh на блоки   */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+}
+
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    margin: 0 auto;
+}
+
+
+.wrapper-main {
+    display: flex;
+    flex-direction: column;
+    max-width: 2560px;
+    margin: 0 auto;
+    background: radial-gradient(62.36% 75.41% at 50% 24.59%, #F4F1EB 0%, #E8DFCD 100%);
+    height: auto;
+}
+
+
+
+
+
+
+/*   Products start   */
+
+.products {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+}
+
+.products__desc {
+    width: 830px;
+    margin-top: 249px;
+    margin-bottom: 801px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.products__desc-title{
+    font-weight: 700;
+    font-size: 80px;
+    color: #3D3D3D;
+    margin-bottom: 25px;
+}
+
+.products__desc-subtitle {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+/*   Карточки  start  */
+
+.block {
+    display: flex;
+    column-gap: 20px;
+}
+
+.cards {
+    width: 550px;
+    height: 540px;
+    background: #FDFAF4;
+    border-radius: 20px;
+}
+
+.cards_desc {
+    margin-top: 355px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 29px;
+    align-items: center;
+    text-align: center;
+}
+
+.cards_desc-title {
+    font-weight: 700;
+    font-size: 35px;
+    color: #3D3D3D;
+}
+
+.cards_desc-subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #3D3D3D;
+    width: 395px;
+}
+
+.cards_desc-arrow {
+    width: 58px;
+    height: 43px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    background: #FFFFFF url("../img/arrow.svg") no-repeat center center;
+}
+
+.cards_desc-arrow:hover {
+    background: #F4B223 url("../img/arrow.svg") no-repeat center center;
+}
+
+/*   Карточки  end  */
+
+.products__hazelnut-top {
+    position: absolute;
+    left: 46px;
+    top: -30px;
+    /*transform: rotate(132.97deg);*/
+}
+.products__hazelnut-bottom {
+    position: absolute;
+    left: -1px;
+    top: 122px;
+    filter: drop-shadow(20px 10px 20px rgba(0, 0, 0, 0.32));
+    /*transform: rotate(0.09deg);*/
+}
+.products__coconut-top {
+    position: absolute;
+    right: -48px;
+    top: 93px;
+    filter: drop-shadow(20px 28px 20px rgba(0, 0, 0, 0.32));
+    /*transform: rotate(-90deg);*/
+}
+.products__coconut-bottom {
+    position: absolute;
+    right: 393px;
+    top: 499px;
+    filter: drop-shadow(28px 15px 30px rgba(0, 0, 0, 0.29));
+}
+
+/*   Products end   */
+
+
+
+
+/*   Development start   */
+
+.development {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+    background: url("../img/development-background.png") no-repeat;
+    background-size: cover;
+}
+
+.development__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 1118px;
+    margin-top: 253px;
+    margin-bottom: 200px;
+}
+
+.development__desc-title {
+    font-weight: 700;
+    font-size: 80px;
+    color: #F4F1EB;
+    margin-bottom: 30px;
+}
+
+.development__desc-subtitle {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+}
+
+.development__desc-btn {
+    width: 231px;
+    height: 55px;
+    background: #FFFFFF;
+    border-radius: 12px;
+
+    font-weight: 700;
+    font-size: 25px;
+    color: #008425;
+    text-align: center;
+    line-height: 54px;
+    text-decoration: none;
+}
+
+.development__desc-btn:hover {
+    background: #F4B223;
+    cursor: pointer;
+}
+
+/*   Development end   */
+
+
+/*   Spices start   */
+
+.spices {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+    /*  ОТ НЕГО НУЖНО ЦЕПЛЯТЬ ЯГОДЫ  */
+}
+
+
+.spices__spices-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin: 226px 0 107px 0;
+}
+
+.spices__spices-title {
+    font-weight: 700;
+    font-size: 80px;
+    color: #3D3D3D;
+    width: 842px;
+    margin-bottom: 25px;
+}
+
+.spices__spices-desc {
+
+    font-weight: 400;
+    font-size: 22px;
+    width: 746px;
+    line-height: 26px;
+    color: #3D3D3D;
+    margin-bottom: 36px;
+    letter-spacing: -0.01em;
+
+}
+
+.spices__spices-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 55px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 25px;
+    color: #008425;
+    text-decoration: none;
+    outline: none;
+}
+
+.spices__spices-link:hover {
+    background: #F4B223;
+}
+
+
+/*   COLLAGE START   */
+.spices__collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 691px 406px 406px);
+    grid-gap: 20px;
+
+    margin: 0 auto 319px auto;
+    width: 1545px;
+    height: 618px;
+}
+
+.spices__collage_card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5%;
+    /* test */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.spices__collage_card-overlay {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background: #008425;
+    opacity: 0.6;
+    box-shadow: inset 0px 0px 150px #000000;
+}
+
+.spices__collage_card_block {
+    display: none;
+    position: absolute;
+    top: 32%;
+    left: 25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.spices__collage_card_block-title {
+    font-weight: 700;
+    font-size: 35px;
+    color: #FFFFFF;
+}
+
+.spices__collage_card_block-subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.spices__collage_card_link {
+    display: none;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 52px;
+    height: 26px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    background: #FFFFFF;
+}
+
+
+.spices__collage_card_size_lg {
+    position: relative;
+    grid-row: 1 / 3;
+}
+
+.spices__collage_card_size_sm {
+    position: relative;
+}
+
+.spices__collage_card-pic {
+    object-fit: cover;
+    height: 100%;
+}
+
+.spices__collage_card_desc-lg {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    column-gap: 10px;
+    font-weight: 700;
+}
+
+.spices__collage_card_desc-sm {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    column-gap: 10px;
+    font-weight: 700;
+}
+
+.spices__collage_card-recipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    width: 99px;
+    height: 24px;
+    background: #008425;
+    color: #FFFFFF;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+.spices__collage_card_desc-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    height: 24px;
+    background: #F4F1EB;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+.spices__collage_card_desc-food {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 79px;
+    height: 24px;
+    background: #F4F1EB;
+    border-radius: 30px;
+
+}
+
+
+/*   Behaviour big square START   */
+.spices__collage_card:hover .spices__collage_card-pic {
+    transform: scale(1.2);
+    transition: 1s all;
+}
+
+.spices__collage_card_size_lg:hover .spices__collage_card-overlay {
+    display: block;
+}
+
+.spices__collage_card_size_lg:hover .spices__collage_card_block {
+    display: flex;
+}
+
+.spices__collage_card_size_lg:hover .spices__collage_card-recipe {
+    background: #FFFFFF;
+    color: #008425;
+}
+
+.spices__collage_card_size_lg:hover .spices__collage_card_link {
+    display: flex;
+}
+
+.spices__collage_card_size_lg:hover .spices__collage_card_block-title {
+    margin-bottom: 10px;
+}
+
+.spices__collage_card_link:hover {
+    background: #F4B223;
+}
+
+.spices__collage_card_link:hover .spices__collage_card_link-arrow {
+    transform: rotate(90deg);
+    transition: .1s all;
+}
+
+/*   Behaviour big square END   */
+
+
+/*   Behaviour small square START   */
+.spices__collage_card_size_sm:hover .spices__collage_card-overlay {
+    display: block;
+}
+
+.spices__collage_card_size_sm:hover .spices__collage_card_block {
+    display: flex;
+    top: 25%;
+    left: 15%;
+}
+
+.spices__collage_card_size_sm:hover .spices__collage_card_block-title {
+    display: block;
+    width: 282px;
+    height: 70px;
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.spices__collage_card_size_sm:hover .spices__collage_card_block-subtitle {
+    display: block;
+    width: 221px;
+    height: 38px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+}
+
+.spices__collage_card_size_sm:hover .spices__collage_card_link {
+    display: flex;
+    right: 10px;
+    bottom: 10px;
+}
+
+.spices__collage_card_link:hover {
+    background: #F4B223;
+}
+
+.spices__collage_card_link:hover .spices__collage_card_link-arrow {
+    transform: rotate(90deg);
+    transition: .1s all;
+}
+
+/*   Behaviour small square END   */
+/*   COLLAGE END   */
+
+
+.spices__follow {
+    position: relative;
+    width: 689px;
+    height: 337px;
+}
+
+.spices__spices-follow {
+    position: absolute;
+    z-index: 2;
+}
+
+.spices__spices-coconut {
+    position: absolute;
+    z-index: 1;
+    left: -300px;
+    bottom: 35px;
+}
+
+/*.spices__spices-coconut {*/
+/*    position: absolute;*/
+/*    left: -295px;*/
+/*    bottom: 100px;*/
+/*    background: url("../img/spices__coconut.png") no-repeat;*/
+/*    width: 424px;*/
+/*    height: 424px;*/
+/*    filter: drop-shadow(16px 27px 50px rgba(0, 0, 0, 0.29));*/
+
+/*}*/
+
+
+.spices__follow-title {
+    position: absolute;
+    font-weight: 700;
+    font-size: 50px;
+    color: #F4F1EB;
+    text-align: center;
+    width: 519px;
+    height: 155px;
+    margin: 100px auto;
+    left: 65px;
+    bottom: -15px;
+    z-index: 3;
+}
+
+.spices__social {
+    display: flex;
+    grid-gap: 23.61px;
+    margin-bottom: 160px;
+
+}
+
+
+.icon {
+    width: 77.69px;
+    height: 77.69px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.spices__follow-vk {
+    background: #008425 url("../img/vk.svg") no-repeat center center;
+}
+
+.spices__follow-vector {
+    background: #008425 url("../img/vector.svg") no-repeat center center;
+}
+
+.spices__follow-vk:hover {
+    opacity: 0.9;
+}
+
+.spices__follow-vector:hover {
+
+    opacity: 0.9;
+}
+
+
+.spices__spices-strawberry-first {
+    position: absolute;
+    left: 45px;
+    top: 134px;
+    background: url("../img/spices__strawberryLeft1.png") no-repeat;
+    width: 163px;
+    height: 209px;
+}
+
+.spices__spices-strawberry-first:active {
+    position: absolute;
+    left: 45px;
+    top: 136.47px;
+    background: url("../img/spices__strawberryLeft1.png") no-repeat;
+    width: 163px;
+    height: 209px;
+    filter: drop-shadow(13px 10px 30px rgba(0, 0, 0, 0.35));
+    transform: rotate(-1.43deg);
+    transition: 1s;
+}
+
+.spices__spices-strawberry-second {
+    position: absolute;
+    left: 189.18px;
+    top: 347.63px;
+    background: url("../img/spices__strawberryLeft2.png") no-repeat;
+    width: 264px;
+    height: 261px;
+}
+
+.spices__spices-strawberry-second:active {
+    position: absolute;
+    left: 320.82px;
+    top: 347.63px;
+    background: url("../img/spices__strawberryLeft2.png") no-repeat;
+    width: 264px;
+    height: 261px;
+    filter: drop-shadow(13px 10px 30px rgba(0, 0, 0, 0.35));
+    transform: rotate(60deg);
+    transition: 1s;
+}
+
+.spices__spices-strawberry-third {
+    position: absolute;
+    right: 0px;
+    top: 51.21px;
+    background: url("../img/spices__strawberryRight.png") no-repeat;
+    width: 264px;
+    height: 481px;
+    filter: drop-shadow(17px 23px 20px rgba(0, 0, 0, 0.25));
+}
+
+
+.spices__spices-blueberry {
+    position: absolute;
+    left: 43px;
+    bottom: -20px;
+    background: url("../img/spices__blueberry.png") no-repeat;
+    background-size: cover;
+
+    width: 396px;
+    height: 393px;
+    filter: drop-shadow(5px 8px 15px rgba(0, 0, 0, 0.35));
+    transform: rotate(18.52deg);
+
+}
+
+.spices__spices-blueberry2 {
+    position: absolute;
+    right: 250.61px;
+    bottom: 469.21px;
+    background: url("../img/spices__blueberry2.png");
+    width: 179px;
+    height: 210px;
+    filter: drop-shadow(5px 2px 8px rgba(0, 0, 0, 0.35));
+    transform: rotate(18.52deg);
+}
+
+.spices__spices-wheat {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url("../img/wheat.png");
+    width: 735px;
+    height: 526px;
+}
+
+
+/*   Spices end   */
+
+
+/*   Footer start   */
+
+.footer {
+    background: #004E16;
+    min-height: 524px;
+}
+
+.footer__footer-wrapper {
+    min-height: 524px;
+    margin: 90px 145px 20px 174px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer__footer-double {
+    display: flex;
+    flex-wrap: wrap;
+    /*margin-right: 100px;  блок спрыгнет ниже из-за margin*/
+}
+
+.footer__footer-logo {
+    width: 190px;
+    height: 107px;
+    margin-right: 88px;
+    background: url("../img/footer_logo.png") no-repeat;
+    background-size: contain;
+}
+
+.footer__footer-logo-link {
+    width: 190px;
+    height: 107px;
+}
+
+.footer__footer-items {
+    display: flex;
+    justify-content: space-between;
+    width: 594px;
+    height: 106px;
+    margin-right: 266px;
+}
+
+.item {
+    font-weight: 700;
+    font-size: 18px;
+    color: #F4F1EB;
+}
+
+.footer_footer-list {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 26px;
+}
+
+.footer__footer-link {
+    text-decoration: none;
+    color: #F4F1EB;
+}
+
+
+.footer__footer-feedback {
+    width: 271px;
+    height: 280px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #F4F1EB;
+}
+
+.footer__footer-feedback-tel {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 23px;
+    margin-bottom: 66px;
+}
+
+.footer__footer-feedback-tel-hotline {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 5px;
+
+    width: 163px;
+    height: 42px;
+}
+
+.tel {
+    font-weight: 700;
+    text-decoration: none;
+    color: #F4F1EB;
+}
+
+.footer__footer-feedback-tel-office {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 5px;
+    width: 163px;
+    height: 42px;
+}
+
+
+.footer__footer-feedback-social {
+    display: grid;
+    grid-row-gap: 23px;
+}
+
+.footer__footer-feedback-social-info-href,
+.footer__footer-feedback-social-info-href:active,
+.footer__footer-feedback-social-info-href:hover {
+    text-decoration: none;
+    color: #F4F1EB;
+    margin-left: 30px;
+}
+
+.footer__footer-feedback-social-info {
+    width: 20px;
+    height: 20px;
+    background: #F4F1EB url("../img/footer__mail.png") no-repeat center center;
+    border-radius: 5px;
+}
+
+.footer__footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.footer__footer-address {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: auto;
+    height: auto;
+}
+
+.href-styles,
+.href-styles:active,
+.href-styles:hover {
+    text-decoration: none;
+    color: #F4F1EB;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+.footer__footer-rights {
+    width: 271px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #F4F1EB;
+}
+
+/*   Footer end   */
