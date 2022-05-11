@@ -5,10 +5,12 @@
 
 ### Шрифты
 
-Получить список шрифтов с макета - Font Fascia Получить ссылку на нужные шрифты - Google Fonts Helper Подключить шрифты
+Получить список шрифтов с макета - Font Fascia  
+Получить ссылку на нужные шрифты - Google Fonts Helper  
+Подключить шрифты  
 - Google Fonts Helper даст код.
 
-### (Настройки META)
+### META
 
 <meta name="viewport"
           content="width=device-width, user-scalable=no, 
