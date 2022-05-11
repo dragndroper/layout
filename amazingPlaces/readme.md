@@ -241,9 +241,7 @@ color: #FFFFFF;
 }
 ```
 
-# Position
 
-Absolute и Fixed выпадают из общего потока документов.
 
 # Box-Sizing
 
@@ -280,21 +278,6 @@ height: auto;
                 </figcaption>
 ```
 
-Плавная картинка
-
-```
-.places__card {
-    overflow: hidden;
-}
-
-.places__card:hover .places__card-pic {
-    transform: scale(1.05);
-}
-
-.places__card-pic {
- transition: .2s all;
-}
-```
 
 # Ссылка
 
@@ -316,24 +299,6 @@ height: auto;
 Тег <section> ставится, когда есть title. Иные случаи семантически неправильны.
 Нет title, - поставь <div>.
 
-# Видео
-
-Хак по подгонке по размеру блока для видео:
-
-```
-.videos {
-    width: 100%;
-}
-
-.videos__wrapper {
-    width: 1440px;
-    margin: 0 auto;
-}
-
-.video__item {
-    padding-top: 100%;
-}
-```
 
 # Правильный перебор ul li
 
@@ -496,33 +461,5 @@ color: var(--primary-color, green);
 }
 ```
 
-Получить доступ из JS
 
-```
-const root = document.querySelector(':root');
-const rootStyles = getComputedStyle(root);
 
-const primaryColor = rootStyles.getPropertyValue('--primary-color')
-console.log(primaryColor)
-
-root.style.setProperty('--primary-color', 'black')
-```
-
-# Анимация 
-
-```
-.element {
-animation-name: moveToTop;
-animation-duration: .2s;
-animation-iteration-count: 1;
-}
-
-@keyframes moveToTop {
-from {
-transform: translateY(50%);
-}
-to {
-transform: translateY(0);
-}
-}
-```
