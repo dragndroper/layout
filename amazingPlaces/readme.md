@@ -12,16 +12,18 @@
 
 ### META
 
+```
 <meta name="viewport"
           content="width=device-width, user-scalable=no, 
-          initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">  
+```
 
-initial-scale=1.0 - Текущий масштаб minimum-scale=1.0 - Минимальный масштаб maximum-scale=1.0 - Максимальный масштаб
+initial-scale=1.0 - Текущий масштаб  
+minimum-scale=1.0 - Минимальный масштаб  
+maximum-scale=1.0 - Максимальный масштаб  
 user-scalable=0 - Запрещаем для других устройств масштабировать верстку
 
 ### @media
-
-## Тип устройства:
 
 # all
 
@@ -107,6 +109,7 @@ min-monochrome: 8).
 # -webkit-device-pixel-ratio
 
 Задаёт количество физических пикселей устройства на каждый CSS-пиксель.
+
 
 # Способы выравнивания дочернего блока внутри родителя
 
@@ -299,7 +302,7 @@ height: auto;
 # Секции
 
 Тег <section> ставится, когда есть title. Иные случаи семантически неправильны.
-Нет title, - поставь <div>.
+Нет title, - поставь div.
 
 
 # Правильный перебор ul li
