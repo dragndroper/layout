@@ -301,7 +301,7 @@ height: auto;
 
 # Секции
 
-Тег <section> ставится, когда есть title. Иные случаи семантически неправильны.
+Тег section ставится, когда есть title. Иные случаи семантически неправильны.
 Нет title, - поставь div.
 
 
@@ -412,20 +412,19 @@ menu.classList.remove('header__nav_active')
 
 # Оптимизация для Google
 
-Проверить оптимизацию - https://pagespeed.web.dev/
-Сжать изображение - https://imagecompressor.com/ru/
-Расстановка - скрипты перед </body>, css перед </head>. Дело в блокировке, хорошо отслеживается через события страницы: DOMContentLoaded и т.д.
+Проверить оптимизацию - https://pagespeed.web.dev/  
+Сжать изображение - https://imagecompressor.com/ru/  
+Расстановка - скрипты перед </body>, css перед </head>. Дело в блокировке, хорошо отслеживается через события страницы: DOMContentLoaded и т.д.  
 Префиксы - https://autoprefixer.github.io/ru/. Кросс-браузерность.  
-
-Минификатор CSS - https://www.toptal.com/developers/cssminifier/.
-Минификатор JS - https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.6&spec=false&loose=false&code_lz=Q&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=env%2Creact%2Cstage-2&prettier=false&targets=&version=7.17.5&externalPlugins=&assumptions=%7B%7D
-Минификатор HTML - https://products.aspose.app/html/ru/minifier/html
-Лучше создавать под них одноименные файлы с префиксом min.
-
+  
+Минификатор CSS - https://www.toptal.com/developers/cssminifier/.  
+Минификатор JS - https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.6&spec=false&loose=false&code_lz=Q&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=env%2Creact%2Cstage-2&prettier=false&targets=&version=7.17.5&externalPlugins=&assumptions=%7B%7D  
+Минификатор HTML - https://products.aspose.app/html/ru/minifier/html  
+Лучше создавать под них одноименные файлы с префиксом min.  
 Валидатор ошибок - https://validator.w3.org/unicorn/?ucn_lang=ru
 
 # Иконки
-Иконки для всех устройств - https://realfavicongenerator.net/
+Иконки для всех устройств - https://realfavicongenerator.net/  
 Если проблемы с доступом, то в настройках Debugger исправляется.
 
 # SEO 
